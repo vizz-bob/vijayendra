@@ -56,6 +56,12 @@
         </div>
       </div>
       <div class="hero-visual">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:1.5rem">
+        <div style="width:180px;height:180px;border-radius:50%;border:3px solid var(--accent-cyan);box-shadow:0 0 30px rgba(0,212,255,0.3);overflow:hidden;flex-shrink:0">
+          <img src="assets/images/profile.jpg" alt="Vijayendra Singh"
+               style="width:100%;height:100%;object-fit:cover"
+               onerror="this.parentElement.style.background='rgba(0,212,255,0.1)';this.parentElement.innerHTML='<i class=\'fas fa-user-astronaut\' style=\'font-size:4rem;color:var(--accent-cyan);display:flex;align-items:center;justify-content:center;height:100%\'></i>'">
+        </div>
         <div class="hero-terminal">
           <div class="terminal-bar">
             <span class="t-red"></span><span class="t-yellow"></span><span class="t-green"></span>
@@ -77,6 +83,7 @@
           <div class="terminal-line">&nbsp;</div>
           <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cursor"></span><span class="cursor"></span></div>
         </div>
+        </div><!-- end flex column -->
       </div>
     </div>
   </div>
