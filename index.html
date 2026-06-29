@@ -204,5 +204,19 @@
   const links = document.querySelectorAll('.nav-links a');
   links.forEach(l => { if(l.href === location.href) l.classList.add('active'); });
 </script>
+
+<!-- FLOATING CHAT BUTTONS -->
+<div class="float-chat-wrap">
+  <a href="https://wa.me/919036336111?text=Hi%20Vijayendra%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+     target="_blank" class="float-btn whatsapp" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-tooltip">Chat on WhatsApp</span>
+  </a>
+  <a href="mailto:vizz.bob@gmail.com?subject=Portfolio%20Enquiry" 
+     class="float-btn email-btn" title="Email">
+    <i class="fas fa-envelope"></i>
+    <span class="float-tooltip">Send Email</span>
+  </a>
+</div>
 </body>
 </html>

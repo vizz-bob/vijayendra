@@ -3,6 +3,40 @@
    Main Stylesheet
    ============================================ */
 
+/* ── FLOATING CHAT BUTTONS ── */
+.float-chat-wrap {
+  position: fixed; bottom: 2rem; right: 1.5rem;
+  display: flex; flex-direction: column; align-items: flex-end;
+  gap: .75rem; z-index: 9999;
+}
+.float-btn {
+  width: 52px; height: 52px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; cursor: pointer; text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+  transition: transform .25s ease, box-shadow .25s ease;
+  position: relative;
+}
+.float-btn:hover { transform: translateY(-3px) scale(1.08); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.float-btn.whatsapp { background: #25D366; color: #fff; }
+.float-btn.email-btn { background: var(--accent-cyan); color: #000; }
+.float-tooltip {
+  position: absolute; right: 62px; top: 50%; transform: translateY(-50%);
+  background: var(--bg-card); color: var(--text-primary);
+  font-size: .78rem; font-weight: 600; white-space: nowrap;
+  padding: .35rem .75rem; border-radius: 6px;
+  border: 1px solid var(--border);
+  opacity: 0; pointer-events: none; transition: opacity .2s;
+}
+.float-btn:hover .float-tooltip { opacity: 1; }
+
+/* ── FORM SUCCESS ── */
+.form-success {
+  display: none; text-align: center; padding: 2rem;
+  background: rgba(0,255,136,0.08); border: 1px solid rgba(0,255,136,0.3);
+  border-radius: var(--radius-lg); color: var(--accent-green);
+}
+
 :root {
   --bg-primary:    #0a0f1e;
   --bg-secondary:  #0d1530;
